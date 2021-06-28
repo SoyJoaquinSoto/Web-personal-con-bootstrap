@@ -1,0 +1,25 @@
+header > h4 {
+    font-family: Inconsolata, monospace;
+    font-weight: 700 !important;
+}
+
+.content {
+    font-family: 'Space Mono', monospace;
+}
+
+.content > div > h1, a {
+    font-weight: 700 !important;
+}
+
+.btn-back {
+    width: 216px;
+    height: 68px;
+    border-radius: 0;
+    text-align: center;
+    line-height: 55px;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600 !important;
+}

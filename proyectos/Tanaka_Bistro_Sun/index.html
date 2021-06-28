@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tanaka Bistro Sun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="../../assets/customScrollbar/3.1.5/css/customScrollbar.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="shortcut icon" href="../../imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-light">
+<div class="container-fluid p-0">
+    <header id="navbar" class="fixed-top pb-1">
+        <nav class="navbar navbar-expand navbar-dark bg-secondary" aria-label="Toggle navbar">
+            <button id="sidebarCollapse" class="navbar-toggler col-auto d-block d-lg-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse col justify-content-end" id="navbarTogglerDemo03">
+                <a class="navbar-brand font-weight-bolder" href="#">Tanaka Bistro Sun</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav id="sidebar" class="navbar-dark flex-column bg-dark position-fixed t-0 l-0 vh-100" aria-label="Toggle sidebar">
+        <div id="branding" class="pb-5 pt-5">
+            <a id="seccion" class="text-decoration-none text-dark" href="#">
+                <h5 class="font-weight-bolder text-light pt-3 text-center d-none" id="tanaka">Tanaka Bistro Sun</h5>
+                <img class="img-fluid" src="imgs/logo.png" alt="logotipo">
+            </a>
+        </div>
+
+        <ul class="navbar-nav mx-auto w-75">
+            <li class="nav-item w-100 border-bottom active">
+                <a class="nav-link" href="#">Menú</a>
+            </li>
+            <li class="nav-item mt-4 w-100 border-bottom">
+                <a class="nav-link" href="carrito.html">
+                    Carrito
+                    <span class="badge badge-secondary badge-pill">3</span>
+                </a>
+            </li>
+            <li class="nav-item  mt-4 w-100 border-bottom">
+                <a class="nav-link" href="rastrear.html">Rastrear pedido</a>
+            </li>
+            <li class="nav-item  mt-4 w-100 border-bottom">
+                <a class="nav-link" href="empleados.html">Empleados</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="contenido" class="bg-light pt-5">
+        <div class="container pt-3 mx-auto">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div id="carrusel" class="carousel slide my-4 shadow" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="imgs/promos/1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="imgs/promos/2.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="imgs/promos/3.png" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-4 col-10">
+
+            <div class="row">
+                <div class="col-10 offset-1 mx-auto bg-light mb-5">
+                    <ul class="nav nav-tabs mb-3" id="perimetros" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active px-2" id="cuadrado-tab" data-toggle="tab" href="#cuadrado" role="tab" aria-controls="cuadrado" aria-selected="true">Desayunos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" id="triangulo-tab" data-toggle="tab" href="#triangulo" role="tab" aria-controls="triangulo" aria-selected="false">Comidas</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="perContenido">
+                        <div class="tab-pane fade show active" id="cuadrado" role="tabpanel" aria-labelledby="cuadrado-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/desayunos/1.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Combo milanesa de pollo</a>
+                                                </h4>
+                                                <h5>$183.99</h5>
+                                                <p class="card-text">Combo Milanesa de Pollo y agua mediana.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/desayunos/2.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Chilaquiles</a>
+                                                </h4>
+                                                <h5>$97.99</h5>
+                                                <p class="card-text">Chilaquiles con salsa roja, verde o divorciados, con crema, queso y cebolla.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/desayunos/3.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Huevos con machaca a la mexicana</a>
+                                                </h4>
+                                                <h5>$161.99</h5>
+                                                <p class="card-text">Huevos con machaca a la mexicana, salsa de chile. guajillo, frijoles y queso.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/desayunos/4.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Hot cakes de amaranto</a>
+                                                </h4>
+                                                <h5>$137.99</h5>
+                                                <p class="card-text">Con harina de amaranto, miel de agave, mantequilla y fruta de temporada.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/desayunos/5.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Combo Enchiladas verdes</a>
+                                                </h4>
+                                                <h5>$133.54</h5>
+                                                <p class="card-text">Combo enchiladas verdes y jugo de temporada.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/desayunos/6.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Crepas</a>
+                                                </h4>
+                                                <h5>$106.99</h5>
+                                                <p class="card-text">Pan brioche con aguamiel de agave y frutos rojos.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="triangulo" role="tabpanel" aria-labelledby="triangulo">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/comidas/1.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Suteki-men</a>
+                                                </h4>
+                                                <h5>$149.99</h5>
+                                                <p class="card-text">Ramen con fideos de tu elección, acompañado de filetes de res (25 g),
+                                                    shiitake, huevo cocido, cebollín y jengibre, servido con un toque de shichimi y aceite de ajonjolí picante,
+                                                    en un fondo de miso.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/comidas/2.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Kotsu-men</a>
+                                                </h4>
+                                                <h5>$170.99</h5>
+                                                <p class="card-text">Ramen con fideos de tu elección, acompañado de un rollo de rib eye y pollo (50 g), huevo cocido, cebollin,
+                                                    elote dulce, champiñon asado, servido con tocino crujiente y un toque de aceite de ajonjoli picante, en un fondo de miso.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/comidas/3.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Panamá roll</a>
+                                                </h4>
+                                                <h5>$139.99</h5>
+                                                <p class="card-text">Aguacate, queso crema y camrón capeado por dentro; plátano frito por fuera; servido con salsa chipotle.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/comidas/4.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">La pinta roll</a>
+                                                </h4>
+                                                <h5>$139.99</h5>
+                                                <p class="card-text">Camarón empanizado y aguacate por dentro, queso crema por fuera; servido con salsa Tampico y ajonjoli.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/comidas/5.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Favorito</a>
+                                                </h4>
+                                                <h5>$139.99</h5>
+                                                <p class="card-text">Camarón, aguacate y queso crema por dentro; cangrejo y ajonjli por fuera.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <a href="#"><img class="card-img-top" src="imgs/comidas/6.png" alt=""></a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href="#">Satélite roll</a>
+                                                </h4>
+                                                <h5>$159.99</h5>
+                                                <p class="card-text">Camarón , queso crema y aguacate por dentro, anquila por fuera; servido con salsa dulce y ajonjoli.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-secondary w-100">Agregar al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../assets/jquery/3.5.1/jquery-3.5.1.js"></script>
+<script src="../../assets/popper/1.16.0/popper.min.js"></script>
+<script src="../../assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="../../assets/customScrollbar/3.1.5/js/customScrollbar.min.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/scripts.js"></script>
+<script src="../../js/calcBasica.js"></script>
+</body>
+</html>

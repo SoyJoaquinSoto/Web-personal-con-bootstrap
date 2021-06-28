@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Joaquín Soto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="../../assets/customScrollbar/3.1.5/css/customScrollbar.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../scss/custom.css">
+    <link rel="shortcut icon" href="../../imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-light">
+<div class="container-fluid p-0">
+    <header id="navbar" class="fixed-top pb-1">
+        <nav class="navbar navbar-expand navbar-dark bg-secondary" aria-label="Toggle navbar">
+            <button id="sidebarCollapse" class="navbar-toggler col-auto d-block d-lg-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse col" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Sobre mí</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="../../blog/sftp.html">Blog</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="#">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="position-absolute b-0 r-0  d-none d-sm-block">
+            <a href="../../index.html" class="text-decoration-none ">
+                <h3 class="font-weight-bolder px-1 pb-1 d-inline mr-1 bg-warning text-dark">Joaquín</h3>
+                <h3 class="font-weight-bolder px-1 pb-1 d-inline mr-2 bg-warning text-dark">Soto</h3>
+            </a>
+        </div>
+    </header>
+
+    <nav id="sidebar" class="navbar-dark flex-column bg-dark position-fixed t-0 l-0 vh-100" aria-label="Toggle sidebar">
+        <div class="py-5 mt-5">
+            <a id="seccion" class="text-decoration-none text-dark" href="#">
+                <h3 class="text-center my-auto bg-light py-4 w-90 mx-auto font-weight-bolder">Proyectos</h3>
+            </a>
+        </div>
+
+        <ul class="navbar-nav mx-auto w-75">
+            <li class="nav-item w-100 border-bottom">
+                <a class="nav-link dropdown-toggle active" href="#calcGeometrica" data-toggle="collapse" aria-expanded="false">Calculadora geométrica</a>
+                <ul class="collapse list-unstyled" id="calcGeometrica">
+                    <li>
+                        <a class="nav-link ml-4 active" href="#"><em class="perimetro p-1 mr-2"></em>Perímetro</a>
+                    </li>
+                    <li>
+                        <a class="nav-link ml-4" href="area.html"><em class="area p-1 mr-2"></em>Área</a>
+                    </li>
+                    <li>
+                        <a class="nav-link ml-4" href="volumen.html"><em class="volumen p-1 mr-2"></em>Volumen</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item mt-4 w-100 border-bottom">
+                <a class="nav-link" href="../calcBasica.html">Calculadora básica</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="contenido" class="bg-light mt-6">
+        <div class="row pt-5 mt-5 mx-0">
+            <div class="col-10 offset-1 mx-auto shadow-sm bg-light">
+                <ul class="nav nav-tabs" id="perimetros" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active px-2" id="cuadrado-tab" data-toggle="tab" href="#cuadrado" role="tab" aria-controls="cuadrado" aria-selected="true">Cuadrado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" id="triangulo-tab" data-toggle="tab" href="#triangulo" role="tab" aria-controls="triangulo" aria-selected="false">Triángulo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" id="circulo-tab" data-toggle="tab" href="#circulo" role="tab" aria-controls="circulo" aria-selected="false">Círculo</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="perContenido">
+                    <div class="tab-pane fade show active" id="cuadrado" role="tabpanel" aria-labelledby="cuadrado-tab">
+                        <div class="container">
+                            <div class="row collapse" id="resPeCuadrado">
+                                <p class="lead col-12 mb-0 mt-3"></p>
+                            </div>
+                            <form id="aaa" class="row my-3 needs-validation" novalidate onsubmit="return false">
+                                <div class="col-12 col-sm my-1 my-sm-2 ">
+                                    <input  id="inPeCuadrado" class="form-control" type="number" min="0" placeholder="Lado" step="0.1" aria-describedby="lados" required>
+                                    <div class="invalid-feedback">
+                                        El valor no puede estar vacío y debe ser positivo.
+                                    </div>
+                                </div>
+                                <div class="col-auto mx-auto my-2">
+                                    <button id="btnPerCuadrado" class="btn bg-secondary text-light">Calcular</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="triangulo" role="tabpanel" aria-labelledby="triangulo">
+                        <div class="container">
+                            <div class="row collapse" id="resPeTriangulo">
+                                <p class="lead col-12 mb-0 mt-3"></p>
+                            </div>
+                            <form class="row my-3 needs-validation" novalidate onsubmit="return false">
+                                <div class="col-12 col-sm my-1 my-sm-2 d-none">
+                                    <p class="text-muted">Area: 25</p>
+                                </div>
+                                <div class="col-12 col-sm my-1 my-sm-2 ">
+                                    <input  id="inPe1Triangulo" class="form-control" type="number" min="0" placeholder="Lado 1" step="0.1" aria-describedby="L1" required>
+                                    <div class="invalid-feedback">
+                                        El valor no puede estar vacío y debe ser positivo.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm my-1 my-sm-2 ">
+                                    <input  id="inPe2Triangulo" class="form-control" type="number" min="0" placeholder="Lado 2" step="0.1" aria-describedby="L2" required>
+                                    <div class="invalid-feedback">
+                                        El valor no puede estar vacío y debe ser positivo.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm my-1 my-sm-2 ">
+                                    <input  id="inPe3Triangulo" class="form-control" type="number" min="0" placeholder="Lado 3" step="0.1" aria-describedby="L3" required>
+                                    <div class="invalid-feedback">
+                                        El valor no puede estar vacío y debe ser positivo.
+                                    </div>
+                                </div>
+                                <div class="col-auto mx-auto my-2">
+                                    <button id="btnPerTriangulo" class="btn bg-secondary text-light" >Calcular</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="circulo" role="tabpanel" aria-labelledby="circulo-tab">
+                        <div class="container">
+                            <div class="row collapse" id="resPeCirculo">
+                                <p class="lead col-12 mb-0 mt-3"></p>
+                            </div>
+                            <form class="row my-3 needs-validation" novalidate onsubmit="return false">
+                                <div class="col-12 col-sm my-1 my-sm-2 ">
+                                    <input id="inPeCirculo" class="form-control" type="number" min="0" placeholder="Diámetro" step="0.1" aria-describedby="Diametro" required>
+                                    <div class="invalid-feedback">
+                                        El valor no puede estar vacío y debe ser positivo.
+                                    </div>
+                                </div>
+                                <div class="col-auto mx-auto my-2">
+                                    <button id="btnPerCirculo" class="btn bg-secondary text-light" >Calcular</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../assets/jquery/3.5.1/jquery-3.5.1.js"></script>
+<script src="../../assets/popper/1.16.0/popper.min.js"></script>
+<script src="../../assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="../../assets/customScrollbar/3.1.5/js/customScrollbar.min.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/scripts.js"></script>
+<script src="../../js/calcGeometrica.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tanaka Bistro Sun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="../../assets/customScrollbar/3.1.5/css/customScrollbar.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="shortcut icon" href="../../imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-light">
+<div class="container-fluid p-0">
+    <header id="navbar" class="fixed-top pb-1">
+        <nav class="navbar navbar-expand navbar-dark bg-secondary" aria-label="Toggle navbar">
+            <button id="sidebarCollapse" class="navbar-toggler col-auto d-block d-lg-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse col justify-content-end" id="navbarTogglerDemo03">
+                <a class="navbar-brand font-weight-bolder" href="#">Tanaka Bistro Sun</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav id="sidebar" class="navbar-dark flex-column bg-dark position-fixed t-0 l-0 vh-100" aria-label="Toggle sidebar">
+        <div id="branding" class="pb-5 pt-5">
+            <a id="seccion" class="text-decoration-none text-dark" href="#">
+                <h5 class="font-weight-bolder text-light pt-3 text-center d-none" id="tanaka">Tanaka Bistro Sun</h5>
+                <img class="img-fluid" src="imgs/logo.png" alt="logotipo">
+            </a>
+        </div>
+
+        <ul class="navbar-nav mx-auto w-75">
+            <li class="nav-item w-100 border-bottom ">
+                <a class="nav-link" href="index.html">Menú</a>
+            </li>
+            <li class="nav-item  mt-4 w-100 border-bottom">
+                <a class="nav-link" href="carrito.html">Carrito</a>
+            </li>
+            <li class="nav-item  mt-4 w-100 border-bottom ">
+                <a class="nav-link" href="rastrear.html">Rastrear pedido</a>
+            </li>
+            <li class="nav-item  mt-4 w-100 border-bottom active">
+                <a class="nav-link" href="#">Empleados</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="contenido" class="bg-light vh-100 pt-5">
+        <div class="container mx-auto py-5 d-flex h-100 justify-content-center align-items-center">
+            <form action="dueño.html" class="col-md-8 co shadow-sm p-3 rounded-lg">
+                <h4 class="mb-3">Inicio de sesión</h4>
+                <div class="form-group">
+                    <label for="id">Correo</label>
+                    <input type="email" class="form-control" id="id" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" class="form-control" id="contrasena" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-secondary w-100">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../../assets/jquery/3.5.1/jquery-3.5.1.js"></script>
+<script src="../../assets/popper/1.16.0/popper.min.js"></script>
+<script src="../../assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="../../assets/customScrollbar/3.1.5/js/customScrollbar.min.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/scripts.js"></script>
+<script src="../../js/calcBasica.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+$yellow: #fbb03b;
+$pink: #ffe2fe;
+$teal: #5f9393;
+$gray: #919191;
+
+$primary: $teal;
+$secondary: $gray;
+$info: $pink;
+$warning: $yellow;
+
+$spacer: 1rem;
+$spacers: () !default;
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: ($spacer * .25),
+                        2: ($spacer * .5),
+                        3: $spacer,
+                        4: ($spacer * 1.5),
+                        5: ($spacer * 3),
+                        6: ($spacer * 6)
+                ),
+                $spacers
+);
+
+$sizes: () !default;
+$sizes: map-merge(
+                (
+                        15: 15%,
+                        20: 20%,
+                        25: 25%,
+                        50: 50%,
+                        75: 75%,
+                        90: 90%,
+                        100: 100%,
+                        auto: auto
+                ),
+                $sizes
+);
+
+$headings-line-height: 1.5;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 640px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+@import "../assets/bootstrap/4.5.3/scss/bootstrap";

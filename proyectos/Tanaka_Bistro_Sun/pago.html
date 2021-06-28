@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tanaka Bistro Sun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="../../assets/customScrollbar/3.1.5/css/customScrollbar.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="shortcut icon" href="../../imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-light">
+<div class="container-fluid p-0">
+    <header id="navbar" class="fixed-top pb-1">
+        <nav class="navbar navbar-expand navbar-dark bg-secondary" aria-label="Toggle navbar">
+            <button id="sidebarCollapse" class="navbar-toggler col-auto d-block d-lg-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse col justify-content-end" id="navbarTogglerDemo03">
+                <a class="navbar-brand font-weight-bolder" href="#">Tanaka Bistro Sun</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav id="sidebar" class="navbar-dark flex-column bg-dark position-fixed t-0 l-0 vh-100" aria-label="Toggle sidebar">
+        <div id="branding" class="pb-5 pt-5">
+            <a id="seccion" class="text-decoration-none text-dark" href="#">
+                <h5 class="font-weight-bolder text-light pt-3 text-center d-none" id="tanaka">Tanaka Bistro Sun</h5>
+                <img class="img-fluid" src="imgs/logo.png" alt="logotipo">
+            </a>
+        </div>
+
+        <ul class="navbar-nav mx-auto w-75">
+            <li class="nav-item w-100 border-bottom ">
+                <a class="nav-link" href="index.html">Menú</a>
+            </li>
+            <li class="nav-item  mt-4 w-100 border-bottom active">
+                <a class="nav-link" href="carrito.html">
+                    Carrito
+                    <span class="badge badge-secondary badge-pill">3</span>
+                </a>
+            </li>
+            <li class="nav-item  mt-4 w-100 border-bottom ">
+                <a class="nav-link" href="rastrear.html">Rastrear pedido</a>
+            </li>
+            <li class="nav-item  mt-4 w-100 border-bottom">
+                <a class="nav-link" href="empleados.html">Empleados</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="contenido" class="bg-light vh-100 pt-5">
+        <div class="container pt-3 mx-auto">
+            <div class="row py-md-5 py-3">
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Tu carrito</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item lh-condensed d-flex align-items-center justify-content-between">
+                            <img class="img-carrito" src="imgs/desayunos/1.png">
+                            <div class="w-50 d-inline-flex justify-content-between">
+                                <div>
+                                    <h6 class="my-0">Combo Milanesa de pollo</h6>
+                                    <small class="text-muted">Combo Milanesa de Pollo y agua mediana.</small>
+                                </div>
+                                <span class="text-muted">$183.99</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item lh-condensed d-flex align-items-center justify-content-between">
+                            <img class="img-carrito" src="imgs/desayunos/2.png">
+                            <div class="w-50 d-inline-flex justify-content-between">
+                                <div>
+                                    <h6 class="my-0">Chilaquiles</h6>
+                                    <small class="text-muted">Chilaquiles con salsa roja, verde o divorciados, con crema, queso y cebolla.</small>
+                                </div>
+                                <span class="text-muted">$97.99</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item lh-condensed d-flex align-items-center justify-content-between">
+                            <img class="img-carrito" src="imgs/desayunos/3.png">
+                            <div class="w-50 d-inline-flex justify-content-between">
+                                <div>
+                                    <h6 class="my-0">Huevos con machaca a la mexicana</h6>
+                                    <small class="text-muted">Huevos con machaca a la mexicana, salsa de chile. guajillo, frijoles y queso.</small>
+                                </div>
+                                <span class="text-muted">$161.99</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (MX)</span>
+                            <strong>$443.97</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8 order-md-1 shadow-sm">
+                    <h4 class="mb-3">Datos del cliente</h4>
+                    <form action="pedido.html" class="needs-validation" novalidate="">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Nombre*</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Apellidos*</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" >
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tel">Teléfono*<span class="text-muted"></span></label>
+                            <input type="text" class="form-control" id="tel" placeholder="5523548571">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email*<span class="text-muted"></span></label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="dir">Dirección*</label>
+                            <input type="text" class="form-control" id="dir" placeholder="Reforma #123">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cod">Código postal*</label>
+                            <input type="text" class="form-control" id="cod" placeholder="04200">
+                        </div>
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Pago</h4>
+
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credito" type="radio" class="custom-control-input" checked="" >
+                                <label class="custom-control-label" for="credito">Tarjeta de crédito</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="debito"  type="radio" class="custom-control-input" >
+                                <label class="custom-control-label" for="debito">Tarjeta de débito</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="paypal" type="radio" class="custom-control-input" >
+                                <label class="custom-control-label" for="paypal">Paypal</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Nombre en la tarjeta*</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="Nombre completo" >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Número de tarjeta*</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="4562 9964 2254 4784" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Expiración*</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="01/24" >
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">CVV*</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="565" >
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <button class="btn btn-secondary btn-lg btn-block" type="submit">Pagar ahora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../assets/jquery/3.5.1/jquery-3.5.1.js"></script>
+<script src="../../assets/popper/1.16.0/popper.min.js"></script>
+<script src="../../assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="../../assets/customScrollbar/3.1.5/js/customScrollbar.min.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/scripts.js"></script>
+<script src="../../js/calcBasica.js"></script>
+</body>
+</html>

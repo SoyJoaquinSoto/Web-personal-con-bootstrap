@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Joaquín Soto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="../assets/customScrollbar/3.1.5/css/customScrollbar.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../scss/custom.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-light">
+<div class="container-fluid p-0">
+    <header id="navbar" class="fixed-top pb-1">
+        <nav class="navbar navbar-expand navbar-dark bg-secondary" aria-label="Toggle navbar">
+            <button id="sidebarCollapse" class="navbar-toggler col-auto d-block d-lg-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse col" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Sobre mí</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="../blog/sftp.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="position-absolute b-0 r-0  d-none d-sm-block">
+            <a href="../index.html" class="text-decoration-none ">
+                <h3 class="font-weight-bolder px-1 pb-1 d-inline mr-1 bg-warning text-dark">Joaquín</h3>
+                <h3 class="font-weight-bolder px-1 pb-1 d-inline mr-2 bg-warning text-dark">Soto</h3>
+            </a>
+        </div>
+    </header>
+
+    <nav id="sidebar" class="navbar-dark flex-column bg-dark position-fixed t-0 l-0 vh-100" aria-label="Toggle sidebar">
+        <div class="py-5 mt-5">
+            <a id="seccion" class="text-decoration-none text-dark" href="#">
+                <h3 class="text-center my-auto bg-light py-4 w-90 mx-auto font-weight-bolder">Proyectos</h3>
+            </a>
+        </div>
+
+        <ul class="navbar-nav mx-auto w-75">
+            <li class="nav-item w-100 border-bottom">
+                <a class="nav-link dropdown-toggle" href="#calcGeometrica" data-toggle="collapse" aria-expanded="false">Calculadora geométrica</a>
+                <ul class="collapse list-unstyled" id="calcGeometrica">
+                    <li>
+                        <a class="nav-link ml-4" href="calcGeometrica/perimetro.html"><em class="perimetro p-1 mr-2"></em>Perímetro</a>
+                    </li>
+                    <li>
+                        <a class="nav-link ml-4" href="calcGeometrica/area.html"><em class="area p-1 mr-2"></em>Área</a>
+                    </li>
+                    <li>
+                        <a class="nav-link ml-4" href="calcGeometrica/volumen.html"><em class="volumen p-1 mr-2"></em>Volumen</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item active mt-4 w-100 border-bottom">
+                <a class="nav-link" href="#">Calculadora básica</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="contenido" class="bg-light vh-100">
+        <div class="row h-100 mx-0 my-md-0 my-sm-6">
+            <div class="col-xl-4 col-lg-8 col-md-8 col-sm-8 col-10 m-auto shadow bg-light rounded-lg border">
+                <div id="calculadora" class="col pt-4">
+                    <div class="form-group row">
+                        <div id="divDisplay" class="col px-2">
+                            <input id="txtDisplay" type="text" class="form-control" value="" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col px-2">
+                            <input id="btnLimpiar" type="button" class="btn btn-outline-secondary btn-lg btn-block" value="AC" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btnPorcentaje" type="button" class="btn btn-secondary btn-lg btn-block" value="%" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col px-2">
+                            <input id="btn7" type="button" class="btn btn-secondary btn-lg btn-block" value="7" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btn8" type="button" class="btn btn-secondary btn-lg btn-block" value="8" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btn9" type="button" class="btn btn-secondary btn-lg btn-block" value="9" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btnDivision" type="button" class="btn btn-secondary btn-lg btn-block" value="/" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col px-2">
+                            <input id="btn4" type="button" class="btn btn-secondary btn-lg btn-block" value="4" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btn5" type="button" class="btn btn-secondary btn-lg btn-block" value="5" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btn6" type="button" class="btn btn-secondary btn-lg btn-block" value="6" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btnMultiplicacion" type="button" class="btn btn-secondary btn-lg btn-block" value="x" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col px-2">
+                            <input id="btn1" type="button" class="btn btn-secondary btn-lg btn-block" value="1" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btn2" type="button" class="btn btn-secondary btn-lg btn-block" value="2" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btn3" type="button" class="btn btn-secondary btn-lg btn-block" value="3" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btnResta" type="button" class="btn btn-secondary btn-lg btn-block" value="-" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col px-2">
+                            <input id="btn0" type="button" class="btn btn-secondary btn-lg btn-block" value="0" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btnPunto" type="button" class="btn btn-secondary btn-lg btn-block" value="." />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btnIgual" type="button" class="btn btn-secondary btn-lg btn-block" value="=" />
+                        </div>
+                        <div class="col px-2">
+                            <input id="btnSuma" type="button" class="btn btn-secondary btn-lg btn-block" value="+" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/jquery/3.5.1/jquery-3.5.1.js"></script>
+<script src="../assets/popper/1.16.0/popper.min.js"></script>
+<script src="../assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="../assets/customScrollbar/3.1.5/js/customScrollbar.min.js"></script>
+<script src="../js/sidebar.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/calcBasica.js"></script>
+</body>
+</html>
